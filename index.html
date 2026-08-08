@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f2c4fb" />
+    <meta name="description" content="这是一个__" />
+    <title>这是一个__</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=ZCOOL+KuaiLe&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=7" />
+  </head>
+  <body>
+    <main class="stage">
+      <p class="brand-kicker">FULL SCORE</p>
+      <h1 class="brand">这是一个__</h1>
+
+      <div class="card-scene">
+        <div class="card" id="card">
+          <div class="card-back" aria-hidden="true">
+            <span class="card-back__lattice"></span>
+            <span class="card-back__corner card-back__corner--top-left">
+              <span class="card-back__pip"></span>
+            </span>
+            <span class="card-back__corner card-back__corner--top-right">
+              <span class="card-back__pip"></span>
+            </span>
+            <span class="card-back__crest">
+              <span class="card-back__crest-diamond"></span>
+              <span class="card-back__crest-text">这是一个__</span>
+              <span class="card-back__crest-diamond"></span>
+            </span>
+            <span class="card-back__corner card-back__corner--bottom-left">
+              <span class="card-back__pip"></span>
+            </span>
+            <span class="card-back__corner card-back__corner--bottom-right">
+              <span class="card-back__pip"></span>
+            </span>
+          </div>
+
+          <div class="card-face">
+            <span class="face-corner face-corner--top">
+              <span class="corner-value" id="cornerTop">?</span>
+              <span class="corner-diamond" aria-hidden="true"></span>
+            </span>
+            <span class="face-corner face-corner--bottom">
+              <span class="corner-value" id="cornerBottom">?</span>
+              <span class="corner-diamond" aria-hidden="true"></span>
+            </span>
+            <span class="face-center" aria-live="polite">
+              <span class="score-stack">
+                <span class="score-value" id="scoreValue">?</span>
+                <span class="score-unit" id="scoreUnit">分</span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="draw-button" id="drawButton" type="button">
+          <svg
+            class="button-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path
+              d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+            />
+            <path d="M20 3v4" />
+            <path d="M22 5h-4" />
+            <path d="M4 17v2" />
+            <path d="M5 18H3" />
+          </svg>
+          <span>抽卡</span>
+        </button>
+
+        <button class="flip-button" id="flipButton" type="button" disabled>
+          <svg
+            class="button-icon button-icon--small"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <polyline points="23 4 23 10 17 10" />
+            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
+          </svg>
+          <span>翻转</span>
+        </button>
+      </div>
+    </main>
+
+    <script src="./script.js?v=7"></script>
+  </body>
+</html>

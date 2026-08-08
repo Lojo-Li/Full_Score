@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="64" y2="64">
+      <stop offset="0" stop-color="#ff5fa2" />
+      <stop offset="1" stop-color="#8f4dff" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#bg)" />
+  <path d="M32 11 50 32 32 53 14 32Z" fill="#fff" opacity="0.92" />
+  <text
+    x="32"
+    y="43"
+    text-anchor="middle"
+    font-family="Microsoft YaHei, sans-serif"
+    font-size="22"
+    font-weight="700"
+    fill="#7a2a8f"
+  >
+    这
+  </text>
+</svg>
