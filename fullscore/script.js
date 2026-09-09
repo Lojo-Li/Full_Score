@@ -10,7 +10,7 @@
   const scoreUnit = document.getElementById("scoreUnit");
 
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const revealMs = prefersReducedMotion ? 600 : 3000;
+  const revealMs = prefersReducedMotion ? 600 : 1000;
   const settleMs = prefersReducedMotion ? 800 : 3820;
   const flipMs = prefersReducedMotion ? 120 : 760;
   const swapMs = prefersReducedMotion ? 20 : 360;
